@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit",
     "homepage": "None",
     "deploy": "rm -r public & yarn run build && gh-pages -d public -b gh-pages -r https://granular-rl.github.io/",
-    "deploy-ssh": "GIT_SSH_COMMAND='ssh -i ~/.ssh/granular_rl' rm -r public & yarn run build && gh-pages -d public -b gh-pages -r git@github.com:granular-rl/granular-rl.github.io.git",
+    "deploy-ssh": "GIT_SSH_COMMAND='ssh -i ~/.ssh/id_ed25519_granular-rl.pub -o IdentitiesOnly=yes' rm -r public & yarn run build && gh-pages -d public -b gh-pages -r git@github.com:granular-rl/granular-rl.github.io.git",
     "staging": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages"
   },
   "dependencies": {
