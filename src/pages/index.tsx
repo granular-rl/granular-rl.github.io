@@ -59,13 +59,14 @@ const IndexPage: React.FC<PageProps> = () => {
                     
                     {/* Abstract */}
                     <Abstract>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum.
-                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum.
+                        Autonomous manipulation of granular media, such as sand, is crucial for applications in construction, excavation, and additive manufacturing.
+                        However, shaping granular materials presents unique challenges due to their high-dimensional configuration space and complex dynamics.
+                        Traditional rule-based approaches struggle with these complexities, requiring extensive engineering efforts.
+                        Reinforcement learning (RL) offers a promising alternative by enabling agents to learn adaptive manipulation strategies through trial and error.
+                        Although RL has been successfully applied to rigid and deformable object manipulation, its application to granular media has received little attention.
+                        Thus, it has remained an open research question how to define the compact observations for the large configuration space and design an effective reward function.
+                        In this work, we present an RL framework that enables a robotic arm with a cubic end-effector to shape granular media into desired structures.
+                        Our results demonstrate the effectiveness of the proposed reward formulation for the training of visual policies that manipulate granular media including their real-world deployment.
                     </Abstract>
 
                     {/* Teaser Video */}
@@ -74,7 +75,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     </video>
 
                     {/* Carousel */}
-                    <CarouselComponent
+                    {/* <CarouselComponent
                         heading={"Real-world Deployment"}
                         items={[
                             { video: "/videos/carousel_1.mp4", label: "First Item" },
@@ -82,20 +83,19 @@ const IndexPage: React.FC<PageProps> = () => {
                             { video: "/videos/carousel_3.mp4", label: "Third Item" },
                             { video: "/videos/carousel_4.mp4", label: "Fourth Item" },
                         ]}
-                    />
+                    /> */}
 
                     {/* Long Video */}
-                    <Heading>Video</Heading>
+                    {/* <Heading>Video</Heading>
                     <div className="flex justify-left text-base">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                         At vero eos et accusam et justo duo dolores et ea rebum.
                     </div>
                     <video controls muted loop alt="Long Video" className="border-2 border-slate-100 mt-4 rounded-xl mx-auto max-w-[100%] sm:max-w-[75%]">
                         <source src="/videos/teaser.mp4" type="video/mp4"/>
-                    </video>
+                    </video> */}
 
-                    {/*<Citation/>*/}
-
+                    {<Citation/>}
 
                     </Article>
 
