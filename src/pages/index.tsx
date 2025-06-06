@@ -10,6 +10,7 @@ import Heading from "../components/Heading";
 import LinkGroup from "../components/LinkGroup";
 import Thanks from "../components/Thanks"
 import Title from "../components/Title"
+import VideoGrid from "../components/VideoGrid"
 
 
 
@@ -74,14 +75,38 @@ const IndexPage: React.FC<PageProps> = () => {
                         <source src="/videos/teaser.mp4" type="video/mp4"/>
                     </video>
 
+                    <VideoGrid
+                    heading="Simulation Deployment"
+                    text="Our approach demonstrates reliable manipulation of the granular medium with a wide range of goal shapes. In the end of each run, the desired goal shape is visible within the medium.
+                    The videos show the simulated render view (left), the reconstructed height map (center), and the goal height map (right)."
+                    items={[
+                        { video: "/videos/sim_rectangle_combined.mp4", label: "Rectangle" },
+                        { video: "/videos/sim_trench_combined.mp4", label: "Trench" },
+                        { video: "/videos/sim_L_combined.mp4", label: "L Shape" },
+                        { video: "/videos/sim_fresco_combined.mp4", label: "Fresco Fragment" },
+                    ]}
+                    scale={0.3}
+                    />
+
+                    <VideoGrid
+                    heading="Real World Deployment"
+                    text="Deployed to the real robotic system, our approach successfully creates the desired goal shape in the granular medium.
+                    The video shows an external camera view (left), the reconstructed height map (center), and the goal height map (right)."
+                    items={[
+                        { video: "/videos/real_trench_combined.mp4", label: "Trench" },
+                    ]}
+                    scale={0.1}
+                    />
+
                     {/* Carousel */}
                     {/* <CarouselComponent
-                        heading={"Real-world Deployment"}
+                        heading={"Simulation Deployment"}
                         items={[
-                            { video: "/videos/carousel_1.mp4", label: "First Item" },
-                            { video: "/videos/carousel_2.mp4", label: "Second Item" },
-                            { video: "/videos/carousel_3.mp4", label: "Third Item" },
-                            { video: "/videos/carousel_4.mp4", label: "Fourth Item" },
+                            { video: "/videos/sim_fresco/fresco_sim_combined.mp4", label: "Fresco Fragment" },
+                            { video: "/videos/sim_fresco/fresco_sim_combined.mp4", label: "Fresco Fragment" },
+                            // { video: "/videos/sim_fresco/fresco_sim_cam.mp4", label: "First Item" },
+                            // { video: "/videos/sim_fresco/fresco_sim_heightmap.mp4", label: "Second Item" },
+                            // { video: "/videos/sim_fresco/fresco_sim_goal.png", label: "Third Item" },
                         ]}
                     /> */}
 
