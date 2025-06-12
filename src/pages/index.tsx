@@ -11,7 +11,8 @@ import LinkGroup from "../components/LinkGroup";
 import Thanks from "../components/Thanks"
 import Title from "../components/Title"
 import VideoGrid from "../components/VideoGrid"
-
+import PlyViewer from '../components/PlyViewer';
+import PlyGrid, { PlyItem } from '../components/PlyGrid';
 
 
 const Article: React.FC = ({children}) => {
@@ -98,15 +99,42 @@ const IndexPage: React.FC<PageProps> = () => {
                     scale={0.1}
                     />
 
+                    <PlyGrid
+                    heading="Qualitative Experimental Results"
+                    text="Explore the resulting shapes within the goal area of the granular medium.
+                        The goal height maps (blue) and the achieved height maps (gray) are rendered as point clouds.
+                        You can rotate, zoom, and pan to examine the structure from any angle."
+                    items={
+                        [
+                        {
+                            urls: ['/models/rectangle_pcd_goal.ply', '/models/rectangle_pcd_achieved.ply'],
+                            label: 'Rectangle',
+                        },
+                        {
+                            urls: ['/models/trench_pcd_goal.ply', '/models/trench_pcd_achieved.ply'],
+                            label: 'Trench',
+                        },
+                        {
+                            urls: ['/models/L_pcd_goal.ply', '/models/L_pcd_achieved.ply'],
+                            label: 'L Shape',
+                        },
+                        {
+                            urls: ['/models/fragment_pcd_goal.ply', '/models/fragment_pcd_achieved.ply'],
+                            label: 'Fresco Fragment',
+                        },
+                        ]
+                    }
+                    cellSize={360}
+                    />
+                    
                     {/* Carousel */}
                     {/* <CarouselComponent
                         heading={"Simulation Deployment"}
                         items={[
-                            { video: "/videos/sim_fresco/fresco_sim_combined.mp4", label: "Fresco Fragment" },
-                            { video: "/videos/sim_fresco/fresco_sim_combined.mp4", label: "Fresco Fragment" },
-                            // { video: "/videos/sim_fresco/fresco_sim_cam.mp4", label: "First Item" },
-                            // { video: "/videos/sim_fresco/fresco_sim_heightmap.mp4", label: "Second Item" },
-                            // { video: "/videos/sim_fresco/fresco_sim_goal.png", label: "Third Item" },
+                            { video: "/videos/teaser.mp4", label: "Fresco Fragment" },
+                            { video: "/videos/teaser.mp4", label: "Fresco Fragment" },
+                            { video: "/videos/teaser.mp4", label: "Fresco Fragment" },
+                            { video: "/videos/teaser.mp4", label: "Fresco Fragment" },
                         ]}
                     /> */}
 
@@ -120,7 +148,7 @@ const IndexPage: React.FC<PageProps> = () => {
                         <source src="/videos/teaser.mp4" type="video/mp4"/>
                     </video> */}
 
-                    {<Citation/>}
+                    {/* {<Citation/>} */}
 
                     </Article>
 

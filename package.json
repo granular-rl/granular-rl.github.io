@@ -22,9 +22,12 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
+    "@react-three/drei": "9.77.0",
+    "@react-three/fiber": "8.13.0",
     "@tailwindcss/container-queries": "^0.1.1",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
+    "@types/three": "^0.176.0",
     "autoprefixer": "^10.4.14",
     "flowbite": "^1.7.0",
     "flowbite-react": "^0.4.7",
@@ -44,14 +47,19 @@
     "react-icons": "^4.10.1",
     "react-multi-carousel": "^2.8.4",
     "tailwindcss": "^3.3.2",
+    "three": "^0.150.0",
+    "d3-delaunay": "^6.0.4",
     "yarn": "^1.22.22"
   },
   "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@types/node": "^20.2.6",
     "@types/react": "^18.2.9",
     "@types/react-dom": "^18.2.4",
     "gh-pages": "^6.1.1",
+    "parcel-bundler": "^1.12.5",
     "typescript": "^5.1.3"
   }
 }
