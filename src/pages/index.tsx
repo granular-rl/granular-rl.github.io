@@ -49,8 +49,13 @@ const IndexPage: React.FC<PageProps> = () => {
                     <Thanks>* Corresponding author</Thanks>
 
                     {/* Affiliations */}
-                    <div className="flex flex-wrap justify-center text-base mb-12 mt-0 leading-none">
+                    <div className="flex flex-wrap justify-center text-base mb-4 mt-0 leading-none">
                         University of Bonn
+                    </div>
+
+                    {/* Conference */}
+                    <div className="flex flex-wrap justify-center text-base mb-4 mt-0 leading-none">
+                        IEEE-RAS International Conference on Humanoid Robots (Humanoids), 2025
                     </div>
 
                     {/*/!* Links *!/*/}
